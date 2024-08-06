@@ -1,31 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolManagementSystem
 {
     public class Person
     {
-        private string name;
+        private string firstName;
         private string surName;
         private DateTime birthDay;
         public string Name {
             get
             {
-                return name;
+                return firstName;
             }
             set
             {
-                name=value;
+                firstName=value;
             }
         }
 
         public string SurName
         {
             get
-            { return surName;
+            { 
+                return surName;
             }
 
             set
@@ -48,7 +45,7 @@ namespace SchoolManagementSystem
         
         } 
 
-        public void DisplayInfo()
+        public void ShowInformation()
         {
             Console.WriteLine($"İsim:{Name}\nSoyisim:{SurName}\nDoğum Tarihi:{BirthDate}");
         }

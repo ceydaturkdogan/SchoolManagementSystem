@@ -1,13 +1,22 @@
-﻿using SchoolManagementSystem;
+﻿
+using System;
+using SchoolManagementSystem;
 
-static void Main (string[] args)
+namespace SchoolManagementSystem
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-    Person person = new Person();
-    person.Name = "Ceyda";
-    person.SurName = "Türkdoğan";
-    person.BirthDate = new DateTime(1995, 1, 21);
+            Person student = new Person();
+            student.Name = "Ceyda";
+            student.SurName = "Türkdoğan";
+            student.BirthDate = new DateTime(1995,01,21);
 
-    person.DisplayInfo();
+            student.ShowInformation();
 
+        }
+    }
 }
+
